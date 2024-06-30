@@ -4,12 +4,10 @@ import { useState } from 'react';
 
 const Bottomheader = () => {
 
-    const [isHomeDropDownVisible, setIsHomeDropdownVisible] = useState(false);
     const [isShopDropDownVisible, setIsShopDropdownVisible] = useState(false);
     const [isDesignDropDownVisible, setIsDesignDropdownVisible] = useState(false);
     const [isBuildDropDownVisible, setIsBuildDropdownVisible] = useState(false);
     const [isAboutDropDownVisible, setIsAboutDropdownVisible] = useState(false);
-    const [isContactDropDownVisible, setIsContactDropdownVisible] = useState(false);
 
     
     const handleShopMouseEnter = () => {
@@ -41,14 +39,6 @@ const Bottomheader = () => {
     };
 
     const handleAboutMouseLeave = () => {
-        setIsAboutDropdownVisible(false);
-    };
-
-    const handleContactMouseEnter = () => {
-        setIsAboutDropdownVisible(true);
-    };
-
-    const handleContactMouseLeave = () => {
         setIsAboutDropdownVisible(false);
     };
 
