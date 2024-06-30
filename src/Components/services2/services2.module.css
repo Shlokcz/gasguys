@@ -1,0 +1,76 @@
+.services2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.productheading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.productheading p{
+    font-size: 14px;
+}
+.productheading h2{
+    font-size: 30px;
+}
+
+.serviceItems{
+    display: flex;
+    /* box-sizing: border-box; */
+    gap: 410px;
+    margin-top: 50px;
+    max-width: 90%;    
+}
+
+.serviceItems h3{
+    margin-top: 10px;
+    color: white;
+}
+
+.serviceItem1{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    /* padding: 20px; */
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    /* box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4); */
+}
+
+.serviceItem1 span{
+    border: none;
+    font-weight: bold;
+    margin-top: 14px;
+    padding: 8px 14px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+.serviceItem1 h3{
+    position: relative;
+    padding: 0px 6px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 22px;
+}
+
+.serviceItem1 img{
+    position: absolute;
+    height: 450px;
+    width: 680px;
+    z-index: -1;
+}
+
+.serviceItem p{
+    text-align: justify;
+    width: 90%;
+}

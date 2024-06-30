@@ -1,0 +1,17 @@
+.subscribe{
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.inputText input{
+    padding: 12px 32px;
+}
+
+.inputText button{
+    padding: 12px 32px;
+    color: white;
+    background-color: black;
+}

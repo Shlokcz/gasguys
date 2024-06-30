@@ -1,0 +1,55 @@
+.whoweare{
+display: flex;
+width: 80%;
+margin: -70px auto;
+/* background-color: pink; */
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1 );
+background-color: white;
+height: 349px;
+}
+
+.whowearecontent{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 0px 60px;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px 0px 0px 10px ;
+}
+
+.whowearecontent span{
+    font-size: 14px;
+    color: #ce9d67;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    width: 25%;
+    padding: 10px 0px;
+    font-weight: bold;
+    /* margin-bottom: 20px; */
+}
+
+.whowearecontent h1{
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.whowearecontent p{
+    margin-bottom: 25px;
+    line-height: 1.6em;
+    max-width: 90%;
+}
+
+.whowearecontent button{
+    
+}
+
+.whoweareimg{
+    width: 50%;
+}
+
+.whoweareimg img{
+    height: 350px;
+    width: 100%;
+    border-radius: 0px 10px 10px 0px;
+}

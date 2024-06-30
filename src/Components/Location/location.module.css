@@ -1,0 +1,32 @@
+.location{
+    background-image: url(/public/images/locator.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+.loc{
+    width: 25%;
+    position: relative;
+    top: 33%;
+    left: 7%;
+    background-color: white;
+    margin: auto 0;
+    padding: 20px 30px;
+}
+
+.loc h2{
+    margin-bottom: 20px;
+}
+
+.loc address{
+    margin-bottom: 16px;
+}
+
+.loc button{
+    padding: 12px 24px;
+    border:none;
+    color: white;
+    background-color: black;
+}
