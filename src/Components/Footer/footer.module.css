@@ -4,7 +4,7 @@
     padding: 40px 0;
     font-family: Arial, sans-serif;
     border-top: 1px solid rgb(138, 138, 138);
-    height: 250px;
+    height: 300px;
   }
   
   .container {
@@ -23,6 +23,11 @@
     position: relative;
     left: 80px;
   }
+
+  .column ul li{
+    font-size: 13px;
+    list-style: none;
+  }
   
   .column h3 {
     font-size: 18px;
@@ -32,8 +37,30 @@
   .column p {
     font-size: 14px;
     line-height: 1.6;
+    text-align: justify;
   }
   
+  .footerMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .getintouch{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .getintouch img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    padding-top: 2px;
+  }
+
   .socialIcons {
     display: flex;
     gap: 10px;
@@ -53,8 +80,9 @@
   }
   
   .bottom {
+    position: relative;
     text-align: center;
-    margin-top: 40px;
+    /* margin-top: 140px; */
     border-top: 1px solid rgb(195, 195, 195);
     padding-top: 10px;
     font-size: 14px;

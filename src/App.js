@@ -17,7 +17,7 @@ function App() {
       <Topheader />
       <Bottomheader />
       <Firstcontent />
-      <Whoweare />
+      {/* <Whoweare /> */}
       <Services />
       <Services2 />
       <Premium />

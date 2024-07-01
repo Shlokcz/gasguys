@@ -3,7 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 700px;
 }
 
 .bookItems{
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 30px;
     position: relative;
     width: 60%;
@@ -26,23 +26,33 @@
 }
 
 .bookItem1 h3{
+    font-size: 17px;
     font-weight: 100;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
 }
 
 .bookItem1 h2{
-    font-weight: 200;
+    font-weight: 100;
+    margin-bottom: 20px;
+    opacity: 0.9;
 }
 
 .bookItem1 span{
+    font-size: 14px;
+    letter-spacing: 0.05em;
     width: 60%;
+    margin-bottom: 16px;
 }
 
 .bookItem1 button{
-    width: 190px;
+    font-size: 16px;
+    width: 200px;
     padding: 15px 30px;
     border: none;
     color: white;
     background-color: black;
+    cursor: pointer;
 }
 
 
@@ -50,10 +60,11 @@
     /* margin-top: 30px; */
     position: relative;
     width: 40%;
-    /* background-color: beige; */
+    margin-top: 100px;
 }
 
 .bookItem2 img{
-    height: 600px;
-    width: 450px;
+    height: 500px;
+    width: 400px;
+    cursor: pointer;
 }

@@ -5,13 +5,10 @@ import image2 from "../../images/gourmet2.png";
 import image3 from "../../images/gourmet3.png";
 
 const images = [
-    { src: image1, txt: "DESIGN SERVICES", txtsm: "Premium Brands", btncnt: "Buy here" },
-    { src: image2, txt: "DESIGN SERVICES2", txtsm: "Premium Brands2", btncnt: "Buy here2"  },
-    { src: image3, txt: "DESIGN SERVICES3", txtsm: "Premium Brands3", btncnt: "Buy here3"  },
+    { src: image1, txt: "LUXURY OUTDOOR LIVING", txtsm: "Kalamazoo Outdoor Gourmet", btncnt: "View the Collection" },
+    { src: image2, txt: "OUR COLLECTION OF OUTDOOR HEATING IS HERE", txtsm: "Cozy Up By the Fire", btncnt: "View the Collection" }
 ];
   
-
-
 const Premium = () => {
   var [selectedIndex, setSelectedIndex] = useState(0);
   const n = images.length;
@@ -36,17 +33,13 @@ const backgroundImageStyle = {
 }
     
   return ( 
+
     <div className={Styles.premium} style={backgroundImageStyle}>
-    <div>
+    <div className={Styles.premiumtext}>
         <h2>{images[selectedIndex].txt}</h2>
         <h1>{images[selectedIndex].txtsm}</h1>
-        {/* <img src={selectedIndex} alt="" /> */}
-        <img 
-          src={images[selectedIndex].src} 
-          style={{ width: '400px', height: '300px',}} 
-          alt='mainimage'
-        />
         <button className={Styles.btnf}><span>{images[selectedIndex].btncnt}</span></button>
+
         <div className={Styles.btn}>
           <button onClick={() => prevImage()} style={{ padding: '10px', cursor: 'pointer', borderRadius: '100%' }}>
             <img src="/images/left-arrow.png" alt="leftarrow" />

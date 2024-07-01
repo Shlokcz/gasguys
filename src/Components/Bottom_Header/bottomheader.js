@@ -4,43 +4,22 @@ import { useState } from 'react';
 
 const Bottomheader = () => {
 
-    const [isShopDropDownVisible, setIsShopDropdownVisible] = useState(false);
-    const [isDesignDropDownVisible, setIsDesignDropdownVisible] = useState(false);
-    const [isBuildDropDownVisible, setIsBuildDropdownVisible] = useState(false);
-    const [isAboutDropDownVisible, setIsAboutDropdownVisible] = useState(false);
-
-    
-    const handleShopMouseEnter = () => {
-        setIsShopDropdownVisible(true);
-    }; 
-    
-    const handleShopMouseLeave = () => {
-        setIsShopDropdownVisible(false);
-    }; 
-    
-    const handleDesignMouseEnter = () => {
-        setIsDesignDropdownVisible(true);
-    };
-    
-    const handleDesignMouseLeave = () => {
-        setIsDesignDropdownVisible(false);
-    };
-
-    const handleBuildMouseEnter = () => {
-        setIsBuildDropdownVisible(true);
-    };
-
-    const handleBuildMouseLeave = () => {
-        setIsBuildDropdownVisible(false);
-    };
-
-    const handleAboutMouseEnter = () => {
-        setIsAboutDropdownVisible(true);
-    };
-
-    const handleAboutMouseLeave = () => {
-        setIsAboutDropdownVisible(false);
-    };
+    const [isCookingDropDownVisible, setIsCookingDropdownVisible] = useState(false);
+    const [isKitchenDropDownVisible, setIsKitchenDropdownVisible] = useState(false);
+    const [isHeatingDropDownVisible, setIsHeatingDropdownVisible] = useState(false);
+    const [isLivingDropDownVisible, setIsLivingDropdownVisible] = useState(false);
+    const [isInstallationDropDownVisible, setIsInstallationDropdownVisible] = useState(false);
+ 
+    const handleCookingMouseEnter = () => setIsCookingDropdownVisible(true); 
+    const handleCookingMouseLeave = () => setIsCookingDropdownVisible(false); 
+    const handleKitchenMouseEnter = () => setIsKitchenDropdownVisible(true);
+    const handleKitchenMouseLeave = () => setIsKitchenDropdownVisible(false);
+    const handleHeatingMouseEnter = () => setIsHeatingDropdownVisible(true);
+    const handleHeatingMouseLeave = () => setIsHeatingDropdownVisible(false);
+    const handleLivingMouseEnter = () => setIsLivingDropdownVisible(true);
+    const handleLivingMouseLeave = () => setIsLivingDropdownVisible(false);
+    const handleInstallationMouseEnter = () => setIsInstallationDropdownVisible(true);
+    const handleInstallationMouseLeave = () => setIsInstallationDropdownVisible(false);
 
   return (
     <section className={Styles.bottomheader}>
@@ -64,41 +43,46 @@ const Bottomheader = () => {
         <div className={Styles.navbar}>
             <ul>
                 <li>Home</li>
-                <li onMouseEnter={handleShopMouseEnter} onMouseLeave={handleShopMouseLeave}>
-                    Shop Now {isShopDropDownVisible && (
+                <li onMouseEnter={handleCookingMouseEnter} onMouseLeave={handleCookingMouseLeave}>
+                    Outdoor Cooking  {isCookingDropDownVisible && (
                     <ul className={Styles.dropdownMenu}>
-                        <li className={Styles.dropdownItem}>Fire Pits</li>
-                        <li className={Styles.dropdownItem}>Fire Pits Accessories</li>
-                        <li className={Styles.dropdownItem}>Grills</li>
+                        <li className={Styles.dropdownItem}>BBQ</li>
+                        <li className={Styles.dropdownItem}>Pizza Ovens</li>
+                        <li className={Styles.dropdownItem}>Griddles</li>
+                        <li className={Styles.dropdownItem}>Burners</li>
+                        <li className={Styles.dropdownItem}>Smokers</li>
                     </ul>
                 )}</li>
-                <li onMouseEnter={handleDesignMouseEnter} onMouseLeave={handleDesignMouseLeave}>
-                    Design Services {isDesignDropDownVisible && (
+                <li onMouseEnter={handleKitchenMouseEnter} onMouseLeave={handleKitchenMouseLeave}>
+                    Outdoor Kitchens {isKitchenDropDownVisible && (
                     <ul className={Styles.dropdownMenu}>
-                        <li className={Styles.dropdownItem}>Outdoor Kitchens and Equipment</li>
-                        <li className={Styles.dropdownItem}>Fire Features</li>
-                        <li className={Styles.dropdownItem}>Patio Heaters</li>
-                        <li className={Styles.dropdownItem}>Pergolas, Decks & Privacy Walls</li>
-                        <li className={Styles.dropdownItem}>natural Gas Tiki Torches</li>
-                        <li className={Styles.dropdownItem}>Pizza Owens and Barbecue Equipment</li>
+                        <li className={Styles.dropdownItem}>Cabinets</li>
+                        <li className={Styles.dropdownItem}>Sinks</li>
+                        <li className={Styles.dropdownItem}>Fridges</li>
+                        <li className={Styles.dropdownItem}>Access Doors</li>
+                        <li className={Styles.dropdownItem}>Trash Centers</li>
+                        <li className={Styles.dropdownItem}>Storage</li>
                     </ul>
                 )}</li>
-                <li onMouseEnter={handleBuildMouseEnter} onMouseLeave={handleBuildMouseLeave}>
-                    Build Services {isBuildDropDownVisible && (
+                <li onMouseEnter={handleHeatingMouseEnter} onMouseLeave={handleHeatingMouseLeave}>
+                    Outdoor Heating {isHeatingDropDownVisible && (
                     <ul className={Styles.dropdownMenu}>
-                        <li className={Styles.dropdownItem}>Electrical Setup</li>
-                        <li className={Styles.dropdownItem}>Product Sourcing Services</li>
+                        <li className={Styles.dropdownItem}>Bromic</li>
+                        <li className={Styles.dropdownItem}>Sunpak</li>
+                        <li className={Styles.dropdownItem}>Dekko</li>
                     </ul>
                 )}</li>
-                <li onMouseEnter={handleAboutMouseEnter} onMouseLeave={handleAboutMouseLeave}>
-                    About Us {isAboutDropDownVisible && (
+                <li onMouseEnter={handleLivingMouseEnter} onMouseLeave={handleLivingMouseLeave}>
+                    Outdoor Living {isLivingDropDownVisible && (
                     <ul className={Styles.dropdownMenu}>
-                        <li className={Styles.dropdownItem}>Our Showroom</li>
-                        <li className={Styles.dropdownItem}>Our Work</li>
-                        <li className={Styles.dropdownItem}>Design Tips</li>
+                        <li className={Styles.dropdownItem}>Patio Furnitures</li>
+                        <li className={Styles.dropdownItem}>Umbrellas</li>
+                        <li className={Styles.dropdownItem}>Complete Backyard Transformation</li>
+                        <li className={Styles.dropdownItem}>Concept Designs</li>
                     </ul>
                 )}</li>
-                <li>Contact Us</li>
+                <li>Our Installations</li>
+                <li>About Us</li>
             </ul>
         </div>
     </section>

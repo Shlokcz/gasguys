@@ -6,6 +6,7 @@
     /* gap: 300px; */
     /* padding: 6px; */
     font-size: 13px;
+    max-width: 1500px;
 }
 
 .topheadercontactitems{
@@ -31,6 +32,7 @@
 .topheadermailitems img{
     height: 20px;
     width: 20px;
+    cursor: pointer;
 }
 
 .topheadermailitems p{

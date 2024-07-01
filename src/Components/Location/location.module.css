@@ -1,9 +1,9 @@
 .location{
-    background-image: url(/public/images/locator.png);
-    background-position: center;
+    background-image: url(/public/images/office.jpg);
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 550px;
 }
 
 .loc{
@@ -29,4 +29,5 @@
     border:none;
     color: white;
     background-color: black;
+    cursor: pointer;
 }

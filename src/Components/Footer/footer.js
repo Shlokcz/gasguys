@@ -6,18 +6,25 @@ const Footer = () => {
     <section className={Styles.footer}>
       <div className={Styles.container}>
         <div className={Styles.column}>
-          <h3>About Us</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud.
-          </p>
+          <h3>Footer Menu</h3>
+          <ul className={Styles.footerMenu}>
+            <li>About Us</li>
+            <li>Returns & Exchange Policy</li>
+            <li>Shipping Policy</li>
+            <li>Contact Us</li>
+            <li>Terms of Service</li>
+            <li>My Account</li>
+          </ul>
         </div>
         <div className={Styles.column}>
-          <h3>Contact</h3>
-          <p>1314 SW Marine Drive, Vancouver, V6P 5Z6</p>
-          <p>Email: info@gasguys.com</p>
-          <p>Phone: (123) 456-7890</p>
+            <h3>Get in Touch</h3>
+          <ul className={Styles.getintouch}>
+            <li><img src="/images/gps.png" alt="gps" />Unit 101, 14772 64 Ave Surrey, V3S 1X7</li>
+            <li><img src="/images/gps.png" alt="gps" />1314 SW Marine Drive, Vancouver, V6P 5Z6</li>
+            <li><img src="/images/message.png" alt="message" />Email: info@thegasguys.ca</li>
+            <li><img src="/images/phone-call.png" alt="phonecall" />Phone: 778-512-1000</li>
+            <li><img src="/images/blackclock.png" alt="clock" />Open daily and closed on Sundays</li>
+          </ul>
         </div>
         <div className={Styles.column}>
           <h3>Follow Us</h3>
