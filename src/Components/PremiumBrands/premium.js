@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import Styles from "./premium.module.css";
 import image1 from "../../images/gourmet.png";
 import image2 from "../../images/gourmet2.png";
-import image3 from "../../images/gourmet3.png";
 
 const images = [
     { src: image1, txt: "LUXURY OUTDOOR LIVING", txtsm: "Kalamazoo Outdoor Gourmet", btncnt: "View the Collection" },

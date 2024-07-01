@@ -2,7 +2,6 @@ import './App.css';
 import Topheader from './Components/Top_Header/topheader';
 import Bottomheader from './Components/Bottom_Header/bottomheader';
 import Firstcontent from './Components/First_Content/firstcontent.js';
-import Whoweare from './Components/whowearesection/whoweare.js';
 import Services from './Components/ProductsandServices/services.js';
 import Services2 from './Components/services2/services2.js';
 import Premium from './Components/PremiumBrands/premium.js';
@@ -17,7 +16,6 @@ function App() {
       <Topheader />
       <Bottomheader />
       <Firstcontent />
-      {/* <Whoweare /> */}
       <Services />
       <Services2 />
       <Premium />

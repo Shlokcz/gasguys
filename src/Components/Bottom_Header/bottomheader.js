@@ -8,7 +8,6 @@ const Bottomheader = () => {
     const [isKitchenDropDownVisible, setIsKitchenDropdownVisible] = useState(false);
     const [isHeatingDropDownVisible, setIsHeatingDropdownVisible] = useState(false);
     const [isLivingDropDownVisible, setIsLivingDropdownVisible] = useState(false);
-    const [isInstallationDropDownVisible, setIsInstallationDropdownVisible] = useState(false);
  
     const handleCookingMouseEnter = () => setIsCookingDropdownVisible(true); 
     const handleCookingMouseLeave = () => setIsCookingDropdownVisible(false); 
@@ -18,8 +17,6 @@ const Bottomheader = () => {
     const handleHeatingMouseLeave = () => setIsHeatingDropdownVisible(false);
     const handleLivingMouseEnter = () => setIsLivingDropdownVisible(true);
     const handleLivingMouseLeave = () => setIsLivingDropdownVisible(false);
-    const handleInstallationMouseEnter = () => setIsInstallationDropdownVisible(true);
-    const handleInstallationMouseLeave = () => setIsInstallationDropdownVisible(false);
 
   return (
     <section className={Styles.bottomheader}>
